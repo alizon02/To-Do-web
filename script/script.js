@@ -1,8 +1,16 @@
 /*TIPS: *No olvides utilizar el almacenamiento local (localStorage)
  para que las tareas queden guardadas en caso
  de que la aplicación se cierre.*/
-function displayFooter() {
-  let page = `      
+let itemsArray=localStorage.getItem("items")?JSON.parse(localStorage.getItem("items")):[]
+function crearTarea(nombreTarea){
+  let objetoTarea = {
+    thing:nombreTarea,
+    checked: false,
+    priority: "Alta",
+    category:"Casa",
+  };
+}
+`      
      
       <footer class="footer">
        
